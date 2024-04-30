@@ -1,0 +1,1051 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 4300px;
+}
+/* header start */
+.header{
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    background-color:rgba(0,0,0, 0.5);
+    display: flex;
+    position: fixed;
+    z-index: 8;
+}
+.header ul{
+    
+    font-size: xx-large;
+    display: flex;
+    margin-left: 200px;
+}
+ul li {
+    margin-top: 15px;
+    margin-right: 30px;
+    list-style: none;
+}
+a{
+    color:rgb(255, 145, 0);
+    text-decoration: none;
+}
+
+.header ul li a:hover{
+    color: rgb(255, 255, 255);
+
+}
+.reto{
+    border-radius: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 100px;
+    height: 60px;
+}
+/* header end ////////////////////////////////////////*/
+/* first page////////////////////////////////////////// */
+.firstpage{
+    background-size: cover;
+    width: 100%;
+    background-image: url(../imges/sea.jpg);
+    height: 100vh;
+    position: relative;
+    
+}
+.overlay{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.contentp1{
+    /* background-color: brown; */
+    height: 200px;
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 7;
+}
+.title{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    transition: 0.5s;
+    
+}
+.title:hover{
+    color: rgb(255, 145, 0);
+    font-size: 55px;
+    
+}
+.subtitle{
+    color: rgb(250, 248, 245);
+    font-size: 30px;
+    text-align: center;
+    margin-top: 4%;
+}
+.btnp1{
+    border-style: none;
+    border-radius: 10px;
+    width: 160px;
+    height: 40px;
+    font-size: large;
+    margin-left: 40%;
+    margin-top: 8%;
+    border:rgba(255, 145, 0, 0.726) solid 2px;
+    color: rgb(255, 123, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: 1s;
+}
+.btnp1:hover{
+    color:rgba(27, 25, 25, 0.925);
+    background-color: rgb(255, 136, 1);
+
+}
+/*///////////////////////////////// first page end ///////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////// second page start//////////////////////////////////////////////////////////////////////////// */
+.contentp2{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imges/OIP\ \(3\).jpg);
+    background-size: cover;
+    z-index: 7;
+}
+.title2{
+    padding-top: 50px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 60px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 145, 0);
+}
+.about1{
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 270px;
+    height: 290px;
+    background-color: rgb(248, 246, 244);
+    margin-left: 130px;
+    margin-top: 90px;
+}
+.about1::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    top: 0;
+    background-color: black;
+    left: 0;
+    transition: 0.5s;
+    opacity: 0;
+    
+}
+.about1:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    
+}
+
+
+.about1::after .h1advantages{
+    color: antiquewhite;
+}
+.about1:hover .h1advantages {
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+    
+    }
+
+.spoon{
+    color: rgb(255, 153, 0);
+    font-size: 40px;
+    padding-top: 20px;
+}
+.about1:hover .spoon  {
+    color: rgb(255, 153, 0);
+    position: relative;
+    z-index: 1;
+    
+    }
+.h1advantages{
+    color:  rgb(255, 153, 0);
+    font-size: 40px;
+}
+.advantages{
+    color:rgb(56, 39, 17);
+    margin-top: 16px;
+    font-size: x-large;
+}
+.about2{
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 270px;
+    height: 290px;
+    background-color: rgb(248, 246, 244);
+    margin-left: 130px;
+    margin-top: 90px;
+}
+.about2::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    top: 0;
+    background-color:rgba(0, 0, 0, 0.5);
+    left: 0;
+    transition: 0.5s;
+    
+    
+}
+.about2:hover::after{
+    width: 100%;
+    height: 100%;
+    
+}
+.about2:hover .h2advantages {
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+    
+    }
+.fish{
+    color: rgb(255, 153, 0);
+    font-size: 40px;
+    padding-top: 20px;
+}
+.about2:hover .fish  {
+    color:rgb(255, 153, 0);
+    position: relative;
+    z-index: 1;
+    
+    }
+.h2advantages{
+    color:rgb(255, 153, 0);
+    font-size: 40px;
+}
+.advantages1{
+    color:rgb(56, 39, 17) ;
+    margin-top: 16px;
+    font-size: x-large;
+}
+.about3{
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 270px;
+    height: 290px;
+    /* border: 5px soild black; */
+    background-color: rgb(248, 246, 244);
+    margin-left: 130px;
+    margin-top: 90px;
+}
+.about3::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    top: 0;
+    background-color: black;
+    left: 0;
+    transition: 0.5s;
+    opacity: 0;
+    
+}
+.about3:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.about3:hover .h3advantages  {
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+    
+    }
+.piper{
+    color:rgb(255, 153, 0);
+    font-size: 40px;
+    padding-top: 20px;
+}
+.about3:hover .piper  {
+    color: rgb(255, 153, 0);
+    position: relative;
+    z-index: 1;
+    
+    }
+.h3advantages{
+    color:rgb(255, 153, 0) ;
+    font-size: 40px;
+}
+.advantages2{
+    color:rgb(56, 39, 17) ;
+    margin-top: 16px;
+    font-size: x-large;
+}
+/* -------------------------second page end----------------------------- */
+/* -------------------------third page start---------------------------- */
+.dishes{
+    color:rgb(255, 123, 0) ;
+    text-align: center;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contentp3{
+    width: 100%;
+    height: 100vh;
+    position:relative;
+background-color: rgb(227, 238, 238);
+z-index: 7;
+
+}
+.shrampdish{
+    /* float: left; */
+    position: absolute;
+    background-image: url(../imges/shrimp1.jpg);
+    background-size: cover;
+    width: 260px;
+    height: 210px;
+    margin-left: 11%;
+    margin-top: 5%;
+    border-radius: 9px;
+}
+.overlayshrimp{
+    /* float: left; */
+    position: absolute;
+    width: 260px;
+    height: 210px;
+    margin-left: 0%;
+    margin-top: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s linear;
+    border-radius: 9px;
+}
+.shrimptitle{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 30px;
+    margin-top: 5%;
+
+}
+.shrimpdicrib{
+    color: antiquewhite;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5%;
+}
+.soup{
+    font-size: 45px;
+    color: rgb(255, 145, 0);
+    margin-left: 40%;
+    margin-top: 7%;
+}
+.shrampdish:hover .overlayshrimp{
+    visibility: visible;
+    opacity: 1;
+    
+}
+.shrampdishs{
+    /* float: left; */
+    position: absolute;
+    background-image: url(../imges/R.jpg);
+    background-size: cover;
+    width: 250px;
+    height: 210px;
+    margin-left: 40%;
+    margin-top: 5%;
+    border-radius: 9px;
+    
+}
+.overlayshrimps{
+    /* float: left; */
+    position: absolute;
+    width: 250px;
+    height: 210px;
+    margin-left: 0%;
+    margin-top: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s linear;
+    border-radius: 9px;
+}
+.shrampdishs:hover .overlayshrimps{
+        visibility: visible;
+        opacity: 1;
+}
+.shrampdishz{
+    /* float: left; */
+    position: absolute;
+    background-image: url(../imges/fish.jpg);
+    background-size: cover;
+    width: 250px;
+    height: 210px;
+    margin-left: 70%;
+    margin-top: 5%;
+    border-radius: 9px;
+    
+}
+.overlayshrimpz{
+    /* float: left; */
+    position: absolute;
+    width: 250px;
+    height: 210px;
+    margin-left: 0%;
+    margin-top: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s linear;
+    border-radius: 9px;
+}
+.shrampdishz:hover .overlayshrimpz{
+        visibility: visible;
+        opacity: 1;
+}
+.fishdish{
+    /* float: left; */
+    position: absolute;
+    background-image: url(../imges/crap.jpg);
+    background-size: cover;
+    width: 260px;
+    height: 210px;
+    margin-left: 11%;
+    margin-top: 25%;
+    border-radius: 9px;
+    
+}
+.overlayfish{
+    /* float: left; */
+    position: absolute;
+    width: 260px;
+    height: 210px;
+    margin-left: 0%;
+    margin-top: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s linear;
+    border-radius: 9px;
+    
+    
+
+}
+.fishdish:hover .overlayfish{
+    visibility: visible;
+    opacity: 1;
+}
+
+.fishdishs{
+    /* float: left; */
+    position: absolute;
+    background-image: url(../imges/fele1.jpg);
+    background-size: cover;
+    width: 260px;
+    height: 210px;
+    margin-left: 39.2%;
+    margin-top: 25%;
+    border-radius: 9px;
+    
+}
+.overlayfishs{
+    /* float: left; */
+    position: absolute;
+    width: 260px;
+    height: 210px;
+    margin-left: 0%;
+    margin-top: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s linear;
+    border-radius: 9px;
+
+    
+    
+
+}
+.fishdishs:hover .overlayfishs{
+    visibility: visible;
+    opacity: 1;
+}
+.fishdishz{
+    /* float: left; */
+    position: absolute;
+    background-image: url(../imges/fela.jpg);
+    background-size: cover;
+    width: 260px;
+    height: 210px;
+    margin-left: 70%;
+    margin-top: 25%;
+    border-radius: 9px;
+    
+}
+.overlayfishz{
+    /* float: left; */
+    position: absolute;
+    width: 260px;
+    height: 210px;
+    margin-left: 0%;
+    margin-top: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s linear;
+    border-radius: 9px;
+}
+.fishdishz:hover .overlayfishz{
+    visibility: visible;
+    opacity: 1;
+}
+/* --------------third page end------------------------ */
+/* ------------------fourth page start------------------------ */
+.contentp4{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(21, 27, 27);
+    z-index: 7;
+}
+.menu-title{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(255, 145, 0);
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.menu-items{
+    position: absolute;
+    width:40%;
+    height: 85%;
+    background-color:rgba(0, 0, 0, 0)
+
+}
+.menu-img{
+    border-radius: 15px;
+    float: left;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+.fishm{
+    color: rgb(255, 145, 0) ;
+    font-size: 30px;
+    padding-left: 180px;
+    margin-top: 25px;
+    
+}
+.star{
+    font-size: 15px;
+    color: rgb(255, 145, 0);
+}
+.menudiscrib{
+    font-size: 20px;
+    color: rgb(255, 145, 0);
+}
+.menu-price{
+    font-size: 25px;
+    color: rgb(255, 145, 0);
+}
+.menu-items1{
+    position: absolute;
+    width:40%;
+    height: 85%;
+    background-color:rgba(0, 0, 0, 0);
+    margin-left: -2px;
+    margin-top: 150px;
+    
+
+}
+.menu-items2{
+    position: absolute;
+    width:40%;
+    height: 85%;
+    background-color:rgba(0, 0, 0, 0);
+    margin-left: -2px;
+    margin-top: 310px;
+    
+
+}
+.menu-items3{
+    position: absolute;
+    width:40%;
+    height: 85%;
+    background-color:rgba(0, 0, 0, 0);
+    margin-left: 50%;
+    margin-top: 5px;
+}
+.menu-items4{
+    position: absolute;
+    width:40%;
+    height: 85%;
+    background-color:rgba(0, 0, 0, 0);
+    margin-left: 50%;
+    margin-top: 160px;
+}
+.menu-items5{
+    position: absolute;
+    width:40%;
+    height: 85%;
+    background-color:rgba(0, 0, 0, 0);
+    margin-left: 50%;
+    margin-top: 315px;
+}
+/* ---------------------------------fourth page end-------------------------------------------- */
+/* -------------------------------fifth page start --------------------------------------------- */
+.heros{
+    margin-top: 48.5%;
+    width: 100%;
+    height: 1000px;
+    background-image: url(../imges/sea.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.overlay-fillet{
+float: left;
+    position: relative;
+    margin-top: 0%;
+    width: 100%;
+    height: 40vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 7;
+}
+.icon1{
+    float: left;
+    margin-left: 10%;
+    margin-top: 85px;
+    width: 100px;
+    height: 100px;
+    border: solid white 2px;
+    border-style: none;
+}
+.icon2{
+    float: left;
+    margin-left: 18%;
+    margin-top: 85px;
+    width: 100px;
+    height: 100px;
+    border: solid white 2px;
+    border-style: none;
+}
+.icon3{
+    float: left;
+    margin-top: 85px;
+    margin-left: 17%;
+    width: 100px;
+    height: 100px;
+    border: solid white 2px;
+    border-style: none;
+}
+.icon4{
+    float: left;
+    margin-top: 85px;
+    margin-left: 15%;
+    width: 100px;
+    height: 100px;
+    border: solid white 2px;
+    border-style: none;
+}
+.icon{
+    font-size: 50px;
+    color:  rgb(255, 145, 0);
+    /* text-align: center; */
+    margin-left: 30px;
+    
+}
+.ico-discrib{
+    font-size: 40px;
+    color:  rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+
+}
+/* --------------------------------------------fifth page end--------------------------------------- */
+.contentp5{
+    float: left;
+    position: relative;
+    margin-top: -55%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(35, 41, 41);
+    z-index: 7;
+}
+.offer{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 145, 0);
+    margin-top: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.offeritems{
+    position: absolute;
+    float: left;
+    width: 100%;
+    height: 65%;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 50px
+}
+.offeritem1{
+    position: absolute;
+    float: left;
+    height: 100%;
+    width: 250px;
+    border:rgb(255, 145, 0) solid 3px;
+    margin-left: 10%;
+    border-radius: 10px;
+}
+.offertitle{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 145, 0);
+    margin-top: 15px;
+}
+.offerimg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.offerprice{
+    font-size: 27px;
+    color: rgb(255, 145, 0);
+    margin-left: 60px;
+    margin-top: 17px;
+}
+.offerdiscrib{
+    font-size: 18px;
+    color: rgb(255, 145, 0);
+    margin-left: 35px;
+}
+.offerlink{
+    font-size: 25px;
+    color: rgb(255, 145, 0);
+    margin-left: 70px;
+}
+.offeritem1::after{
+    width: 100%;
+    height: 0%;
+    content: " ";
+    position: absolute;
+    top: 0;
+    background-color: black;
+    left: 0;
+    transition: 1s;
+    opacity: 0;
+}
+.offeritem1:hover::after{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+/* ------------- */
+.offeritem2{
+    position: absolute;
+    float: left;
+    height: 100%;
+    width: 250px;
+    border:rgb(255, 145, 0) solid 3px;
+    margin-left: 40%;
+    border-radius: 10px;
+}
+.offertitle{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 145, 0);
+    margin-top: 15px;
+}
+.offerimg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.offerprice{
+    font-size: 27px;
+    color: rgb(255, 145, 0);
+    margin-left: 60px;
+    margin-top: 17px;
+}
+.offerdiscrib{
+    font-size: 18px;
+    color: rgb(255, 145, 0);
+    margin-left: 35px;
+}
+.offerlink{
+    font-size: 25px;
+    color: rgb(255, 145, 0);
+    margin-left: 70px;
+}
+.offeritem2::after{
+    width: 100%;
+    height: 0%;
+    content: " ";
+    position: absolute;
+    top: 0;
+    background-color: black;
+    left: 0;
+    transition: 1s;
+    opacity: 0;
+}
+.offeritem2:hover::after{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+/* --------- */
+.offeritem3{
+    position: absolute;
+    float: left;
+    height: 100%;
+    width: 250px;
+    border:rgb(255, 145, 0) solid 3px;
+    margin-left: 70%;
+    border-radius: 10px;
+}
+.offertitle{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 145, 0);
+    margin-top: 15px;
+}
+.offerimg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.offerprice{
+    font-size: 27px;
+    color: rgb(255, 145, 0);
+    margin-left: 60px;
+    margin-top: 17px;
+}
+.offerdiscrib{
+    font-size: 18px;
+    color: rgb(255, 145, 0);
+    margin-left: 35px;
+}
+.offerlink{
+    font-size: 25px;
+    color: rgb(255, 145, 0);
+    margin-left: 70px;
+}
+.offeritem3::after{
+    width: 100%;
+    height: 0%;
+    content: " ";
+    position: absolute;
+    top: 0;
+    background-color: black;
+    left: 0;
+    transition: 1s;
+    opacity: 0;
+}
+.offeritem3:hover::after{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+/* ------------------seven page start --------------------------------------------------- */
+.chefs{
+    color:rgb(255, 123, 0) ;
+    text-align: center;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contentp6{
+    width: 100%;
+    height: 100vh;
+    margin-top: -7%;
+    position:relative;
+background-color: rgb(227, 238, 238);
+z-index: 7;
+
+}
+.chef1{
+    position: absolute;
+    float: left;
+    width: 300px;
+    height: 70%;
+    border: solid black 2px;
+    margin-top: 3%;
+    background-color:rgb(41, 52, 56);
+    border-style: none;
+    margin-left: 7%;
+}
+.chef-img{
+    width: 240px;
+    height: 62%;
+    margin-top: 26px;
+    margin-left: 31px;
+    border-radius: 5px;
+}
+.chef-name{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 40px;
+    color: rgba(255, 123, 0, 0.829) ;
+}
+.chef-link{
+    margin-left: 90px;
+    font-size: 25px;
+    color: rgba(255, 123, 0, 0.829) ;
+
+}
+.chef1::after{
+    width: 100%;
+    height: 0%;
+    content: " ";
+    position: absolute;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    left: 0;
+    transition: 1s;
+    opacity: 0;
+}
+.chef1:hover::after{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+/* -------- */
+.chef2{
+    position: absolute;
+    float: left;
+    width: 300px;
+    height: 70%;
+    border: solid black 2px;
+    margin-top: 3%;
+    background-color:rgb(41, 52, 56);
+    border-style: none;
+    margin-left: 39%;
+}
+.chef2::after{
+    width: 100%;
+    height: 0%;
+    content: " ";
+    position: absolute;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    left: 0;
+    transition: 1s;
+    opacity: 0;
+}
+.chef2:hover::after{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+/* ----------------- */
+.chef3{
+    position: absolute;
+    float: left;
+    width: 300px;
+    height: 70%;
+    border: solid black 2px;
+    margin-top: 3%;
+    background-color:rgb(41, 52, 56);
+    border-style: none;
+    margin-left: 70%;
+}
+.chef3::after{
+    width: 100%;
+    height: 0%;
+    content: " ";
+    position: absolute;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    left: 0;
+    transition: 1s;
+    opacity: 0;
+}
+.chef3:hover::after{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.overlay-chef{
+    position: absolute;
+    float: left;
+    margin-top: 24.5px;
+    margin-left: 78.6%;
+    visibility: hidden; 
+    transition: 0.2s;
+}
+.c-icon{
+    font-size: 40px;
+    color: rgb(255, 115, 0);
+}
+.overlay-chef a{
+    display: block;
+}
+.chef1:hover .overlay-chef{
+    visibility: visible;
+    z-index: 9;
+    opacity: 1;
+    
+    }
+    .chef2:hover .overlay-chef{
+        visibility: visible;
+        z-index: 9;
+        opacity: 1;
+        
+        }
+        .chef3:hover .overlay-chef{
+            visibility: visible;
+            z-index: 9;
+            opacity: 1;
+            
+            }
+/* --------------------------seven page end------------------------ */
+/* -------------------------------eight page start------------------ */
+.footer{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(34, 38, 41);
+}
+.footer-img{
+    width: 250px;
+    height: 150px;
+    margin-top: 50px;
+    margin-left: 40%;
+    border-radius: 10%;
+}
+.foot-chef{
+    float: left;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 42%;
+
+}
+.f-icon{
+    font-size: 40px;
+    color:  rgb(255, 145, 0);
+    display: inline;
+}
+.foot-copyright{
+    color: rgb(255, 145, 0);
+    font-size: 15px;
+    margin-top: 70px;
+    margin-left: 35%;
+}
+/* --------------------------eight page end -------------------------------- */
